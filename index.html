@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doco — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7f9; --border: #e3e6ea;
+    --text: #1c1f24; --muted: #5b636d; --tint: #3f7a8c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101215; --surface: #181b1f; --border: #2a2f36;
+      --text: #e8eaed; --muted: #9aa2ab; --tint: #6db3c4;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 22px; margin-bottom: 8px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; margin: 34px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  .lead { font-size: 17px; color: var(--muted); }
+  a { color: var(--tint); }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 18px; margin: 18px 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .tocwrap { overflow-x: auto; }
+  code { background: var(--surface); padding: 1px 6px; border-radius: 6px; font-size: 14px; }
+  footer { margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="lead">Doco — Documents &amp; Cards</p>
+    <p class="muted" style="font-size:14px;margin:2px 0 0;">Last updated: 16 July 2026</p>
+  </header>
+
+  <div class="card">
+    <p><strong>The short version.</strong> Doco is built to keep your documents on your device. Your cards, IDs, and files are stored encrypted on your phone and are <strong>not</strong> uploaded to us unless you choose to turn on cloud backup with Doco Pro. We don't sell your data, and we don't use your documents to target ads.</p>
+  </div>
+
+  <p>This Privacy Policy explains what information the Doco mobile app ("Doco", "the app", "we", "us") collects, how it is used, and the choices you have. Doco is provided by <strong>Asad Javed</strong> (the "developer"), acting as the data controller. If you have any questions, contact us at <a href="mailto:asadjaved.work@gmail.com">asadjaved.work@gmail.com</a>.</p>
+
+  <h2>1. Data stored on your device</h2>
+  <p>The core of Doco works entirely on your device. When you scan or import a document or card, the following is stored <em>locally</em> on your phone:</p>
+  <ul>
+    <li>Document and card images you capture or import.</li>
+    <li>Text fields read from those documents (for example a name, ID number, or expiry date) so the app can organise them and remind you before they expire.</li>
+    <li>Folders, people, and labels you create to organise your items.</li>
+  </ul>
+  <p>This data is encrypted at rest on your device using AES-256 encryption, with the encryption key held in the device Keychain and protected by your device passcode / Face ID. This on-device data is <strong>not transmitted to us</strong> and is not accessible to us. If you delete the app, this local data is removed with it.</p>
+
+  <h2>2. Account information</h2>
+  <p>You can use most of Doco without an account. If you choose to sign in — which is required for Doco Pro and cloud backup — we create an account using <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>. In that process we receive and store:</p>
+  <ul>
+    <li>Your email address (or the private relay address Apple provides, if you choose to hide your email).</li>
+    <li>Your name, if provided by the sign-in provider.</li>
+    <li>A unique account identifier.</li>
+  </ul>
+  <p>We use this only to create and secure your account, to link a Doco Pro subscription to you, and to enable cloud backup. Authentication and account records are handled by our backend provider, <strong>Supabase</strong>, on our behalf.</p>
+
+  <h2>3. Cloud backup (Doco Pro)</h2>
+  <p>Cloud backup is an <strong>optional</strong> feature available to Doco Pro subscribers. If you enable it, a copy of your vault is uploaded to our cloud backend (provided by Supabase) so you can restore it. Your data is transmitted over encrypted connections (HTTPS) and stored in access-controlled infrastructure tied to your account. If you never enable cloud backup, none of your documents leave your device. You can stop using cloud backup and delete your backed-up data at any time (see <a href="#deletion">Deleting your data</a>).</p>
+
+  <h2>4. Advertising</h2>
+  <p>Doco is free to use and supported by ads for users who are not subscribed to Doco Pro. Ads are provided by <strong>Google AdMob</strong>. We have configured AdMob to serve <strong>non-personalized ads</strong> — meaning ads are not based on a profile built from your interests, and we do not use the contents of your documents for advertising in any way.</p>
+  <p>To serve ads and measure them, Google's advertising SDK may collect limited technical information such as device type, coarse location derived from IP address, and advertising/diagnostic identifiers. Doco does <strong>not</strong> track you across other companies' apps and websites, and does not present the App Tracking Transparency prompt, because we do not perform that kind of tracking. For install measurement, the app uses Apple's SKAdNetwork, which reports conversions to Google in a privacy-preserving, aggregated way.</p>
+  <div class="card">
+    <p class="muted" style="margin:0;">Ads are not shown for the first 7 days after you install Doco, and are never shown to Doco Pro subscribers. Learn more about how Google uses data in its <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">partner policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>.</p>
+  </div>
+
+  <h2>5. Subscriptions and payments</h2>
+  <p>Doco Pro is sold as an auto-renewing subscription through the Apple App Store. Payments are processed by <strong>Apple</strong> — we never receive or store your card or payment details. We receive only confirmation of whether your subscription is active, so we can unlock Pro features.</p>
+
+  <h2>6. Who we share data with</h2>
+  <div class="tocwrap">
+  <table>
+    <thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
+    <tbody>
+      <tr><td>Supabase</td><td>Account authentication &amp; optional cloud backup</td><td>Email, name, account ID, and (only if you enable backup) your vault data</td></tr>
+      <tr><td>Google AdMob</td><td>Non-personalized advertising</td><td>Device &amp; diagnostic identifiers, coarse location from IP</td></tr>
+      <tr><td>Apple</td><td>Sign-in and subscription payments</td><td>Sign-in identifier; payment handled entirely by Apple</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>We do <strong>not</strong> sell your personal information, and we do not share your documents with advertisers.</p>
+
+  <h2>7. Data retention</h2>
+  <p>On-device data is kept until you delete the item or remove the app. Account information and any cloud backup are kept while your account exists, and are deleted when you delete your account.</p>
+
+  <h2 id="deletion">8. Deleting your data</h2>
+  <p>You are in control of your data:</p>
+  <ul>
+    <li><strong>Delete individual items</strong> at any time inside the app.</li>
+    <li><strong>Erase everything on your device</strong> using Settings → Erase Doco.</li>
+    <li><strong>Delete your account</strong> using Settings → Delete account. This permanently removes your account and any cloud-backed data from our systems.</li>
+  </ul>
+  <p>You can also request deletion by emailing <a href="mailto:asadjaved.work@gmail.com">asadjaved.work@gmail.com</a>.</p>
+
+  <h2>9. Security</h2>
+  <p>We take reasonable measures to protect your information, including on-device AES-256 encryption, Keychain-protected keys, optional Face ID / passcode app lock, and encrypted (HTTPS) connections for any data in transit. No method of storage or transmission is 100% secure, but we work to protect your information using industry-standard practices.</p>
+
+  <h2>10. Children</h2>
+  <p>Doco is not directed to children under the age of 13 (or the minimum age required in your country), and we do not knowingly collect personal information from them.</p>
+
+  <h2>11. International users</h2>
+  <p>Your information may be processed and stored on servers located outside your country of residence. Where required, we rely on appropriate safeguards for such transfers.</p>
+
+  <h2>12. Your rights</h2>
+  <p>Depending on where you live (for example under GDPR or the CCPA), you may have the right to access, correct, or delete your personal information, to object to or restrict certain processing, and to opt out of the "sale" or "sharing" of personal information. Doco does not sell your personal information. To exercise any of these rights, contact us at <a href="mailto:asadjaved.work@gmail.com">asadjaved.work@gmail.com</a>.</p>
+
+  <h2>13. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the "Last updated" date above and, where appropriate, notify you in the app.</p>
+
+  <h2>14. Contact</h2>
+  <p>Questions about this policy or your data? Email <a href="mailto:asadjaved.work@gmail.com">asadjaved.work@gmail.com</a>.</p>
+
+  <footer>
+    Doco — Documents &amp; Cards · Provided by Asad Javed · Last updated 16 July 2026
+  </footer>
+</div>
+</body>
+</html>
