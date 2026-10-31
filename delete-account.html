@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your Doco account</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --page: #f4f4f5;
+    --surface: #ffffff;
+    --ink: #2b2b2b;
+    --ink-dim: #6b6b72;
+    --line: #e3e3e6;
+    --accent: #0077d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0c0c0e;
+      --surface: #242426;
+      --ink: #f5f5f5;
+      --ink-dim: #b0b0b2;
+      --line: #353537;
+      --accent: #4da3ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px 80px;
+    background: var(--page);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; text-wrap: balance; }
+  .sub { color: var(--ink-dim); margin: 0 0 32px; }
+  h2 { font-size: 19px; margin: 36px 0 12px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 0 0 20px;
+  }
+  ol, ul { padding-left: 22px; margin: 0; }
+  ol li, ul li { margin: 8px 0; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-dim); font-weight: 600; }
+  td:first-child { width: 42%; font-weight: 500; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; color: var(--ink-dim); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Delete your Doco account</h1>
+  <p class="sub">Doco — document vault, by Asad Javed</p>
+
+  <p>Doco works without an account. Signing in is optional and enables cloud
+  backup only. If you have signed in and want your account and everything
+  stored with it removed, you can do it yourself, from inside the app, in
+  under a minute.</p>
+
+  <h2>How to delete your account</h2>
+  <div class="card">
+    <ol>
+      <li>Open <strong>Doco</strong>.</li>
+      <li>Go to the <strong>Settings</strong> tab.</li>
+      <li>Under <strong>Cloud backup</strong>, tap your signed-in account.</li>
+      <li>Tap <strong>Delete account</strong>.</li>
+      <li>Confirm. Your cloud backup is deleted first, then the account itself.</li>
+    </ol>
+  </div>
+
+  <p>If you can no longer open the app — for example because the device is
+  lost — email <a href="mailto:asadjaved.work@gmail.com">asadjaved.work@gmail.com</a> from the
+  address you signed in with, and ask for your account to be deleted. We will
+  action it within 30 days.</p>
+
+  <h2>What is deleted</h2>
+  <div class="card">
+    <table>
+      <tr><th>Data</th><th>What happens</th></tr>
+      <tr>
+        <td>Your account</td>
+        <td>Deleted immediately. The email address held against it is removed.</td>
+      </tr>
+      <tr>
+        <td>Cloud backup — documents, scans and card details</td>
+        <td>Deleted immediately, before the account itself.</td>
+      </tr>
+      <tr>
+        <td>Subscription records</td>
+        <td>Deleted with the account.</td>
+      </tr>
+      <tr>
+        <td>Documents on your device</td>
+        <td>
+          Kept. Doco never had a copy unless you turned on cloud backup, and
+          deleting your account does not reach into your phone. To remove them
+          too, use <strong>Settings&nbsp;→&nbsp;Erase Doco</strong>, or
+          uninstall the app.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Retention</h2>
+  <p>Nothing is kept after deletion. There is no grace period and no archived
+  copy: the backup object is removed from storage and the account row is
+  deleted, which removes every record attached to it.</p>
+
+  <h2>Deleting some of your data, without deleting your account</h2>
+  <p>You do not have to delete your account to remove data. Delete individual
+  documents or folders at any time — they go to Recently&nbsp;Deleted for 30
+  days and then go for good. <strong>Settings&nbsp;→&nbsp;Erase Doco</strong>
+  clears everything on the device while leaving your account intact.</p>
+
+  <h2>Your subscription</h2>
+  <p>Deleting your Doco account does <strong>not</strong> cancel Doco&nbsp;Pro.
+  A subscription is held by Google&nbsp;Play, not by us — cancel it in the
+  Play&nbsp;Store under <em>Payments&nbsp;and&nbsp;subscriptions&nbsp;→&nbsp;Subscriptions</em>.</p>
+
+  <footer>
+    <p>Doco · <a href="./">Privacy policy</a> · <a href="./support.html">Support</a></p>
+  </footer>
+</main>
+</body>
+</html>
